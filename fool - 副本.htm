@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgba(0, 0, 0, 0.2);
+            /* margin: 0 auto; */
+        }
+        #head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            /* margin: 0 auto; */
+        }
+
+        .radius{
+            /* display: flex;
+            box-sizing: border-box; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+            width: 500px;
+            height: 500px;
+            /* margin: 0 auto; */
+            background: url(./9715beb0ad7c40fc974a0f7fe06e64b2~tplv-dy-aweme-images_q75.webp) no-repeat center;
+        }
+
+        .radius span{
+            font-size: 40px;
+            color: pink;
+            font-weight: bolder;
+            font-family: "宋体";
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        .btn button {
+            width: 60px;
+            height: 35px;
+            background-color: aqua;
+            outline: none;
+            border: none;
+            /* color: white */
+            border-radius: 5px;
+        }
+        .two {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            background-color: gray;
+            display: none;
+        }
+
+        .two span {
+            display: block;
+            color: red;
+            font-weight: bolder;
+            font-family: "微软雅黑";
+            font-size: 45px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="head">
+        
+        <div class="radius">
+
+            <div>
+                <span>Are you sweet baby?</span>
+            </div>
+
+            <div class="btn">
+                <button type="button" onclick="d(1)">yes</button>
+            <button type="button" onclick="d(0)">no</button>
+            </div>
+
+            <!-- <div><span>you are eldest sweet baby?</span></div> -->
+
+            <!-- <button></button> -->
+        </div>
+
+        <div class="two">
+            <span>you are sb</span>
+            <span>you are sb</span>
+            <span>you are sb</span>
+        </div>
+
+    </div>
+
+    <Script>
+        function d (type = 1) {
+            const isYes = type === 1
+            // alert(isYes ? 'you are sb' :'you are sb')
+            const head = document.querySelector('.radius');
+             head.style.display = 'none';
+
+             const two = document.querySelector('.two');
+             two.style.display = 'flex';
+
+            // yes
+            // if(type === 1){
+                
+            //     return
+            // }
+
+            // // no
+            // alert('you are sb')
+        }
+
+        // var name = prompt('请输入你的名字');
+        // var like = prompt('输入你的爱好');
+        // alert(name + '是一个喜欢' + like + '的大笨蛋');
+
+        // const f = () => {
+        //     if (!prompt('请输入你的名字')) {
+        //         f ()
+        //     }
+        // }
+        
+        // f()
+
+        // const head = document.querySelector('#head');
+        // head.style.display = 'flex';
+        
+        // const f = () => {
+        //     if(!alert('Are you sweet baby?')){
+        //         // f()  
+        //         head.style.display = 'flex';
+        //     }
+        // }
+        // f()
+
+        
+    </Script>
+    
+</body>
+</html>
