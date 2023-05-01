@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(3 >= 5);//false
+        console.log(3 <= 4);//true
+        //1.我们程序里卖弄的等于符号是 == 默认转换数据类型 会把字符串的数据转换为数字型    只要求值一样就行了
+        console.log(3 == 5);//false
+        console.log('pink老师' == '刘德华');//false
+        console.log(18 == 18);//true
+        console.log(18 == '18');//true     ==这是等号
+        console.log(18 != 18);//false    !=这是不等号
+        //我们程序里面有全等 一模一样  要求 两侧的值 还有数据类型完全一直才可以    ===这是全等符号
+        console.log(18 === 18);//true
+        console.log(18 === '18');//false
+
+
+        //等号的小结
+        // 1. = 的作用是赋值  用法把右边给左边
+        // 2. == 作用是判断   用法是判断两边的值是否相等（注意此时有隐式转换）
+        // 3. === 作用是全等  用法是判断两边的值和数据类型是否完全相同
+    </script>
+</body>
+</html>
